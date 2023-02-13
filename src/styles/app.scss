@@ -1,0 +1,22 @@
+.app{
+  padding-bottom: 166px;
+  &__row{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+  &__box{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+}
+.app__desc{
+  @include text(400, 20px, 30px);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #363853;
+  opacity: 0.9;
+  margin: 30px 0;
+}

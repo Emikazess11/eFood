@@ -1,0 +1,46 @@
+.food{
+  padding-bottom: 165px;
+  &__row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 43px;
+    margin-top: 50px;
+
+  }
+  &__card{
+    border-radius: 53px 5px 53px 0;
+    background: #FFFFFF;
+    width: calc(33.33333% - 28.66666px);
+    &-info {
+      padding: 22px 39px 22px 20px;
+
+      &-bottom {
+        display: flex;
+        column-gap: 15px;
+        align-items: center;
+
+        &-btn {
+          padding: 10px 32px;
+          background: $orange;
+          box-shadow: 0 5px 12px rgba(255, 104, 56, 0.19);
+          border-radius: 20px 20px 0 20px;
+          border: none;
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+}
+.food__card-info-bottom-data{
+  @include text(300, 13px, 30px);
+  color: #363853;
+  opacity: 0.9;
+}
+.food__card-title{
+    @include text(400, 24px, 30px);
+    color: #363853;
+ }
+.food__card-img{
+  width: 356px;
+}
